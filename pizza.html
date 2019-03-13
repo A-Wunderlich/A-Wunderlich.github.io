@@ -10,14 +10,14 @@
     <title>Custom Pizza Maker</title>
   </head>
   <body>    
-        <div class="jumbotron text-center mx-4 bg-danger">
+        <div class="jumbotron text-center mx-4 mb-3 bg-danger">
             <h1 class="display-4">Pizza Maker Deluxe</h1>
-            <p class="lead font-weight-bold">Welcome to Pizza Maker Deluxe! Custom build your own pizza by using the options below, review your choices, and press the "Order" when ready and there you
-                have it! Your pizza order will be submitted to your exact specifications!
+            <p class="lead font-weight-bold">Welcome to Pizza Maker Deluxe! Custom build your own pizza by selecting from the options below, review your choices, and press "Order" when ready and there you
+                have it! Your pizza order will be made to your exact specifications!
             </p>
         </div>
         <!-------------------------------ROW 1 CONTAINER-------------------------------------------------------------->
-        <div class="container py-3">
+        <div class="container pb-3">
                 <div class="row">
                 <!---------------------------------------------PIZZA SIZE-------------------------------------------------->
                   <div class="col">
@@ -25,102 +25,62 @@
                         <div class="form-check">
                             <input class="size" type="radio" name="Size" value="Personal" checked>
                             <label class="form-check-label">
-                                Personal Size ($6.00)
+                                Personal ($6.00)
                             </label>
                         </div>
                             <div class="form-check">
                             <input class="size" type="radio" name="Size" value="Medium">
                             <label class="form-check-label">
-                                Medium Size ($10.00)
+                                Medium ($10.00)
                             </label>
                         </div>
                         <div class="form-check">
                                 <input class="size" type="radio" name="Size" value="Large">
                                 <label class="form-check-label">
-                                Large Size ($14.00)
+                                Large ($14.00)
                             </label>
                         </div>
                         <div class="form-check">
                                 <input class="size" type="radio" name="Size" value="XLarge">
                                 <label class="form-check-label">
-                                XLarge Size ($16.00)
+                                XLarge ($16.00)
                             </label>
                         </div>
                     </div>
                     <!-----------------------------------/PIZZA SIZE------------------------------------------->
-                    <!-----------------------------MEAT TOPPINGS------------------------------------------------->
-                    <div class="col">
-                            <h3>Meat Toppings (first topping free, all others +$1.00 each)</h3>
-                            <div class="form-check">
-                                <input class="meats" type="checkbox" name="Meat" value="Pepperoni">
-                                <label class="form-check-label">
-                                    Pepperoni
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                <input class="meats" type="checkbox" name="Meat" value=" Sausage">
-                                <label class="form-check-label">
-                                    Sausage
-                                </label>
-                            </div>
-                                <div class="form-check">
-                                <input class="meats" type="checkbox" name="Meat" value=" Canadian Bacon">
-                                <label class="form-check-label">
-                                        Canadian Bacon
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="meats" type="checkbox" name="Meat" value=" Ground Beef">
-                                    <label class="form-check-label">
-                                        Ground Beef
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                    <input class="meats" type="checkbox" name="Meat" value=" Anchovy">
-                                    <label class="form-check-label">
-                                            Anchovy
-                                    </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="meats" type="checkbox" name="Meat" value=" Chicken">
-                                        <label class="form-check-label">
-                                            Chicken
-                                </label>
-                            </div>
-                            
+                                    <!---------------------------------------------PIZZA CRUST-------------------------------------------------->
+                  <div class="col">
+                    <h3>Crust Style</h3>
+                    <div class="form-check">
+                        <input class="crust" type="radio" name="Crust" value="Plain" checked>
+                        Plain
                     </div>
-                    <!-----------------------------------/MEAT TOPPINGS-------------------------------->
+                        <div class="form-check">
+                            <input class="crust" type="radio" name="Crust" value="Garlic Butter">
+                            Garlic Butter
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="crust" type="radio" name="Crust" value="Cheese Stuffed">
+                        Cheese Stuffed ($3.00 extra)
+                    </div>
+                    <div class="form-check">
+                        <input class="crust" type="radio" name="Crust" value="Spicy">
+                        Spicy
+                    </div>
+                    <div class="form-check">
+                        <input class="crust" type="radio" name="Crust" value="House Special">
+                        House Specal
+                    </div>
+                </div>
+                <!-----------------------------------/PIZZA CRUST------------------------------------------->
+                   
                 </div>
         </div>
         <!-------------------------------ROW 2 CONTAINER------------------------------------------------------------------>
         <div class="container bg-danger rounded-lg py-3">
                 <div class="row">
-                <!---------------------------------------------PIZZA CRUST-------------------------------------------------->
-                  <div class="col">
-                        <h3>Crust style</h3>
-                        <div class="form-check">
-                            <input class="crust" type="radio" name="Crust" value="Plain crust" checked>
-                            Plain Crust
-                        </div>
-                            <div class="form-check">
-                                <input class="crust" type="radio" name="Crust" value="Garlic butter crust">
-                                Garlic Butter Crust
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust">
-                            Cheese Stuffed Crust ($3.00 extra)
-                        </div>
-                        <div class="form-check">
-                            <input class="crust" type="radio" name="Crust" value="Spicy Crust">
-                            Spicy Crust
-                        </div>
-                        <div class="form-check">
-                            <input class="crust" type="radio" name="Crust" value="House Special Crust">
-                            House Specal Crust
-                        </div>
-                    </div>
-                    <!-----------------------------------/PIZZA CRUST------------------------------------------->
+
                     <!-----------------------------VEG TOPPINGS------------------------------------------------->
                     <div class="col">
                         <h3>Veggie Toppings (first topping free, all others +$1.00 each)</h3>
@@ -158,11 +118,53 @@
                             </div>
                         </div>
                     <!-----------------------------------/VEG TOPPINGS-------------------------------->
+                     <!-----------------------------MEAT TOPPINGS------------------------------------------------->
+                     <div class="col">
+                        <h3>Meat Toppings (first topping free, all others +$1.00 each)</h3>
+                        <div class="form-check">
+                            <input class="meats" type="checkbox" name="Meat" value="Pepperoni">
+                            <label class="form-check-label">
+                                Pepperoni
+                            </label>
+                            </div>
+                            <div class="form-check">
+                            <input class="meats" type="checkbox" name="Meat" value=" Sausage">
+                            <label class="form-check-label">
+                                Sausage
+                            </label>
+                        </div>
+                            <div class="form-check">
+                            <input class="meats" type="checkbox" name="Meat" value=" Canadian Bacon">
+                            <label class="form-check-label">
+                                    Canadian Bacon
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="meats" type="checkbox" name="Meat" value=" Ground Beef">
+                                <label class="form-check-label">
+                                    Ground Beef
+                            </label>
+                        </div>
+                        <div class="form-check">
+                                <input class="meats" type="checkbox" name="Meat" value=" Anchovy">
+                                <label class="form-check-label">
+                                        Anchovy
+                                </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="meats" type="checkbox" name="Meat" value=" Chicken">
+                                    <label class="form-check-label">
+                                        Chicken
+                            </label>
+                        </div>
+                        
+                </div>
+                <!-----------------------------------/MEAT TOPPINGS-------------------------------->
                 </div>
         </div>
         <!---------------------------------------/ROW 2 CONTAINER------------------------------------------------>
         <!----------------------------------------ROW 3 CONTAINER------------------------------------------------>
-        <div class="container">
+        <div class="container py-3">
                 <div class="row">
                         <!---------------------------------------------PIZZA SAUCE-------------------------------------------------->
                         <div class="col">
@@ -179,7 +181,7 @@
                                 </div>
                                 <div class="form-check">
                                     <input class="sauce" type="radio" name="Sauce" value="Barbque Sauce">
-                                    Barbque Sauce
+                                    Barbeque Sauce
                                 </div>
                                 <div class="form-check">
                                     <input class="sauce" type="radio" name="Sauce" value="No Sauce">
@@ -196,15 +198,16 @@
                                 <div class="form-check">
                                     <input class="cheese" type="radio" name="Cheese" value="Regular Cheese" checked>
                                     Regular Cheese
+                                </div>     
+                                <div class="form-check">
+                                    <input class="cheese" type="radio" name="Cheese" value="Extra Cheese">
+                                    Extra Cheese ($3.00 extra)
                                 </div>
                                 <div class="form-check">
                                     <input class="cheese" type="radio" name="Cheese" value="No Cheese">
                                     No Cheese
                                 </div>
-                                <div class="form-check">
-                                    <input class="cheese" type="radio" name="Cheese" value="Extra Cheese">
-                                    Extra Cheese ($3.00 extra)
-                                </div>
+                           
 
                             </div>
                             <!-----------------------------------/VEG TOPPINGS-------------------------------->
